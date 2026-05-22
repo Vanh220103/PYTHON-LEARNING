@@ -1,0 +1,39 @@
+TEST CASE 1: Valid Login
+═══════════════════════════════════════════════════════════
+ID: 				TC_LOGIN_001
+Title: 				Verify login with valid credential
+Module:				Authentication
+Priority:			CRITICAL
+Type:				Functional
+
+Precondition:
+- User is login page: https://www.saucedemo.com/
+- Browser is GG, Edge, Brave
+- No active session
+
+Test Steps:
+- Locate username input field
+- Locate password input field
+- Enter username
+- Enter password
+- Click "Login" button
+- Wait for page to load
+
+Expected Result:
+- Redirected to inventory page
+- product list is visible
+- Navigation menu shows username
+- No error messages displayed
+- Page loads within 2 seconds
+
+Actual Result:
+- Redirected to inventory page
+- product list is visible
+- Navigation menu shows username
+- No error messages displayed
+- Page loads within 2 seconds
+
+Status:
+- Pass
+
+
