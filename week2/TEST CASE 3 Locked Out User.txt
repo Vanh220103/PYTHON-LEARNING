@@ -1,0 +1,31 @@
+TEST CASE 3: Locked Out User
+═══════════════════════════════════════════════════════════
+ID:              TC_LOGIN_003
+Title:           Verify locked out user cannot login
+Module:          Authentication
+Priority:        HIGH
+Type:            Functional
+
+Precondition:
+- User account "locked_out_user" exists in system
+- Account is in locked state
+
+Test Steps:
+1. Enter "locked_out_user" in Username field
+2. Enter "password123" in Password field
+3. Click "Login" button
+4. Check error message
+
+Expected Result:
+- User stays on login page
+- Error message: "Sorry, this user has been locked out."
+- Error box is displayed in red
+- Page remains on https://www.saucedemo.com/
+
+Actual Result:
+- User stays on login page
+- Error message: "Username and password do not match any user in this service"
+- Error box is displayed in red
+- Page remains on https://www.saucedemo.com/
+
+Status:          [PASS / FAIL]

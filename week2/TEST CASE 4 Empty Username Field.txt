@@ -1,0 +1,31 @@
+TEST CASE 4: Empty Username Field
+═══════════════════════════════════════════════════════════
+ID:              TC_LOGIN_004
+Title:           Verify login with empty username
+Module:          Authentication
+Priority:        MEDIUM
+Type:            Functional
+
+Precondition:
+- User is on login page
+- Both input fields are empty
+
+Test Steps:
+1. Leave Username field empty
+2. Enter "password123" in Password field
+3. Click "Login" button
+4. Observe validation message
+
+Expected Result:
+- User stays on login page
+- Validation error: "Username is required"
+- Error icon appears next to Username field
+- Username field is focused/highlighted
+
+Actual Result:
+- User stays on login page
+- Validation error: "Username is required"
+- Error icon appears next to Username field
+- Username field is focused/highlighted
+
+Status:          [PASS / FAIL]

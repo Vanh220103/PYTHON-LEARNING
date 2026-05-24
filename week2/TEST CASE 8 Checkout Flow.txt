@@ -1,0 +1,43 @@
+TEST CASE 8: Checkout Flow
+═══════════════════════════════════════════════════════════
+ID:              TC_CHECKOUT_008
+Title:           Verify complete checkout process
+Module:          Checkout
+Priority:        CRITICAL
+Type:            Functional
+
+Precondition:
+- User is logged in
+- One or more products in cart
+- User is on cart page
+
+Test Steps:
+1. Click "Checkout" button
+2. Enter First Name: "John"
+3. Enter Last Name: "Doe"
+4. Enter Postal Code: "12345"
+5. Click "Continue" button
+6. Verify order summary (items, total)
+7. Click "Finish" button
+8. Click "Back Home" button
+9. Verify order confirmation
+
+Expected Result:
+- Redirected to checkout page (step 1: Your information)
+- Continue button enabled after filling fields
+- Redirected to step 2: Overview page
+- Order summary shows correct items and total
+- Redirected to confirmation page
+- Message: "Thank you for your order!"
+- Order confirmation number is displayed
+
+Actual Result:
+- Redirected to checkout page (step 1: Your information)
+- Continue button enabled after filling fields
+- Redirected to step 2: Overview page
+- Order summary shows correct items and total
+- Redirected to confirmation page
+- Message: "Thank you for your order!"
+- Order confirmation number is displayed
+
+Status:          [PASS / FAIL]

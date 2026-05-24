@@ -1,0 +1,32 @@
+TEST CASE 7: Remove Product from Cart
+═══════════════════════════════════════════════════════════
+ID:              TC_CART_007
+Title:           Verify remove product from cart
+Module:          Shopping Cart
+Priority:        CRITICAL
+Type:            Functional
+
+Precondition:
+- User is logged in
+- One product already added to cart
+- User is on cart page
+
+Test Steps:
+1. Locate the added product
+2. Click "Remove" button
+3. Verify product is removed from list
+4. Check cart counter
+
+Expected Result:
+- Product is removed from cart
+- Cart page shows empty state message: "Your cart is empty"
+- Cart counter shows "0"
+- "Continue Shopping" button is displayed
+
+Actual Result:
+- Product is removed from cart
+- Cart page shows empty state message: "Your cart is empty"
+- Cart counter shows "0"
+- "Continue Shopping" button is displayed
+
+Status:          [PASS / FAIL]

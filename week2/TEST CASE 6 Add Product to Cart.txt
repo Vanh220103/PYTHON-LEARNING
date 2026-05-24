@@ -1,0 +1,37 @@
+TEST CASE 6: Add Product to Cart
+═══════════════════════════════════════════════════════════
+ID:              TC_CART_006
+Title:           Verify add product to cart
+Module:          Shopping Cart
+Priority:        CRITICAL
+Type:            Functional
+
+Precondition:
+- User is logged in as standard_user
+- User is on inventory page
+- At least one product is visible
+- Cart is empty (0 items)
+
+Test Steps:
+1. Locate first product "Sauce Labs Backpack"
+2. Click "Add to cart" button
+3. Verify cart counter updates
+4. Click on cart icon (top right)
+5. Verify product appears in cart
+
+Expected Result:
+- "Add to cart" button changes to "Remove from cart"
+- Cart counter shows "1" (badge on cart icon)
+- Cart page displays the added product
+- Product price matches: $29.99
+- Subtotal is calculated correctly
+
+Actual Result:
+- "Add to cart" button changes to "Remove from cart"
+- Cart counter shows "1" (badge on cart icon)
+- Cart page displays the added product
+- Product price matches: $29.99
+- Subtotal is calculated correctly
+
+
+Status:          [PASS / FAIL]
